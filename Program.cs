@@ -11,17 +11,9 @@ namespace DesignPattern
 {
     class Demo
     {
-        static void Main(string[] args)
-        {
-            var j = new Journal();
-            j.AddEntry("hello");
-            j.AddEntry("bye");
-            WriteLine(j);
+        //static void Main(string[] args)
+        //{
 
-            var p = new Presistence();
-            var filename = @"d:\test\test.txt";
-            p.SaveToFile(j, filename, true);
-            Process.Start(filename);
-        }
+        //}
     }
 }
