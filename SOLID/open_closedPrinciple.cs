@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // class should open for extension but closed for modification
 namespace DesignPattern
@@ -21,13 +18,19 @@ namespace DesignPattern
         Small, Medium, Large, Huge
     }
 
+    public enum Brand
+    {
+        Apple, Samsung, Ford
+    }
+
     public class Product
     {
         public string Name;
         public Color color;
         public Size size;
+        public Brand brand;
 
-        public Product(string Name, Color color, Size size)
+        public Product(string Name, Color color, Size size, Brand brand)
         {
             if (Name == null)
                 throw new ArgumentNullException(paramName: nameof(Name));
@@ -35,6 +38,7 @@ namespace DesignPattern
             this.Name = Name;
             this.color = color;
             this.size = size;
+            this.brand = brand;
         }
     }
 
@@ -114,6 +118,21 @@ namespace DesignPattern
         }
     }
 
+    public class BrandSpecification : ISpecification<Product>
+    {
+        private Brand brand;
+
+        public BrandSpecification(Brand brand)
+        {
+            this.brand = brand;
+        }
+
+        public bool IsSatisified(Product t)
+        {
+            return t.brand == brand;
+        }
+    }
+
     public class AndSpecification<T> : ISpecification<T>
     {
         private ISpecification<T> first, second;
@@ -129,6 +148,25 @@ namespace DesignPattern
         }
     }
 
+    public class MultiSpecification<T> : ISpecification<T>
+    {
+        private IList<ISpecification<T>> Filters;
+        public MultiSpecification(IList<ISpecification<T>> filters)
+        {
+            Filters = filters ?? throw new ArgumentNullException(paramName: nameof(filters));
+        }
+        public bool IsSatisified(T t)
+        {
+            bool flag = true;
+            foreach (var f in Filters)
+            {                
+                flag &= f.IsSatisified(t);
+            }
+
+            return flag;
+        }
+    }
+
     public class BetterFilter : IFilter<Product>
     {
         public IEnumerable<Product> Filter(IEnumerable<Product> items, ISpecification<Product> spec)
@@ -140,6 +178,7 @@ namespace DesignPattern
             }
         }
     }
+
     //static void Main(string[] args)
     //{
     //    var apple = new Product("Apple", Color.Green, Size.Small);

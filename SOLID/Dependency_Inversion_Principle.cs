@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 // high-level modules should not depend upon low-level ones; use abstractions
 namespace DesignPattern
@@ -32,19 +29,19 @@ namespace DesignPattern
     // low-level
     public class Relationships : IRelationshipBrowser
     {
-        private List<(Person, Relationship, Person)> relations
+        private List<(Person, Relationship, Person)> _relations
         = new List<(Person, Relationship, Person)>();
 
         public void AddParentAndChild(Person Parent, Person Child)
         {
-            relations.Add((Parent, Relationship.Parent, Child));
-            relations.Add((Child, Relationship.Child, Parent));
+            _relations.Add((Parent, Relationship.Parent, Child));
+            _relations.Add((Child, Relationship.Child, Parent));
         }
 
-        public List<(Person, Relationship, Person)> Relations => relations;
+        public List<(Person, Relationship, Person)> Relations => _relations;
         public IEnumerable<Person> FindAllChildrenof(string name)
         {
-            return relations.Where(
+            return _relations.Where(
                     x => x.Item1.Name == name &&
                          x.Item2 == Relationship.Parent
                     ).Select(r => r.Item3);
