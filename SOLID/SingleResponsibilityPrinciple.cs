@@ -4,7 +4,7 @@ using System.IO;
 
 //  a class should only have on reason to change
 // Separation of concerns - different classes handling different, independent tasks/problems
-namespace DesignPattern
+namespace DesignPattern.SOLID
 {
     public class Journal
     {

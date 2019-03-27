@@ -1,0 +1,14 @@
+﻿Motivation
+
+--Some objects are simple and can be created in a single constructor call
+--Other objects require a lot of ceremony to creat
+--Having an object with 10 constructor agruments is not productive
+--Instead, opt for piecewise construction
+
+
+Summary
+
+--A builder is a seperate component for building an object
+--Can either give builder a constructor or return it via a static function
+--To make builder fluent, return this
+--Different facets of an object can be built with different builders working in tandem via a base class

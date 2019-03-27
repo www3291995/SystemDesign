@@ -1,7 +1,7 @@
 ﻿
 
 // should be able to substitute a base type for a subtype
-namespace DesignPattern
+namespace DesignPattern.SOLID
 {
     public class Liskov_Substitution_Principle
     {

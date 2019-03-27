@@ -45,10 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\Builder.cs" />
+    <Compile Include="Builder\Exercise.cs" />
+    <Compile Include="Builder\Faceted_Builder.cs" />
+    <Compile Include="Builder\Fluent_builder_inheritance_with_recursive_generics.cs" />
+    <Compile Include="Builder\Without_builder.cs" />
     <Compile Include="SOLID\Dependency_Inversion_Principle.cs" />
-    <Compile Include="SOLID\interface_Segregation_Principle.cs" />
+    <Compile Include="SOLID\Interface_Segregation_Principle.cs" />
     <Compile Include="SOLID\Liskov_Substitution_Principle.cs" />
-    <Compile Include="SOLID\open_closedPrinciple.cs" />
+    <Compile Include="SOLID\Open_closedPrinciple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SOLID\SingleResponsibilityPrinciple.cs" />
@@ -56,6 +61,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Builder\Builder.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

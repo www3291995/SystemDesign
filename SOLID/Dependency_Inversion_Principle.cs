@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 // high-level modules should not depend upon low-level ones; use abstractions
-namespace DesignPattern
+namespace DesignPattern.SOLID
 {
     class Dependency_Inversion_Principle
     {

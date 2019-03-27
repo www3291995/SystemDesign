@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 // class should open for extension but closed for modification
-namespace DesignPattern
+namespace DesignPattern.SOLID
 {
     class open_closedPrinciple
     {

@@ -2,7 +2,7 @@
 
 // don't put too much into an interface; split into separate interfaces
 // YAGNI - you ain't goint to need it
-namespace DesignPattern
+namespace DesignPattern.SOLID
 {
     class interface_Segregation_Principle
     {
