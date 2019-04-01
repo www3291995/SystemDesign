@@ -50,6 +50,13 @@
     <Compile Include="Builder\Faceted_Builder.cs" />
     <Compile Include="Builder\Fluent_builder_inheritance_with_recursive_generics.cs" />
     <Compile Include="Builder\Without_builder.cs" />
+    <Compile Include="Factory\Abstract_Factory.cs" />
+    <Compile Include="Factory\Abstract_Factory_And_OCP.cs" />
+    <Compile Include="Factory\Exercise.cs" />
+    <Compile Include="Factory\Factory.cs" />
+    <Compile Include="Factory\Factory_Method.cs" />
+    <Compile Include="Factory\Inner_Factory.cs" />
+    <Compile Include="Factory\Point_Example.cs" />
     <Compile Include="SOLID\Dependency_Inversion_Principle.cs" />
     <Compile Include="SOLID\Interface_Segregation_Principle.cs" />
     <Compile Include="SOLID\Liskov_Substitution_Principle.cs" />
@@ -64,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Builder\Builder.txt" />
+    <Content Include="Factory\Factory.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

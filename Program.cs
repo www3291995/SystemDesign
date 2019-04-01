@@ -5,10 +5,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPattern.Builder;
+using DesignPattern.Factory;
 using static System.Console;
-using Person = DesignPattern.Builder.Faceted.Person;
-using PersonBuilder = DesignPattern.Builder.Faceted.PersonBuilder;
+using HotDrinkMachine = DesignPattern.Factory.Abstract_Factory_And_OCP.HotDrinkMachine;
+using Point = DesignPattern.Factory_Inner_Factory.Point;
 
 namespace DesignPattern
 {
@@ -16,7 +16,11 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
+            var p = new PersonFactory();
+            p.CreatePerson("john");
+            p.CreatePerson("emily");
 
+            WriteLine(p);
 
             // ------------------------------------
             ReadLine();
