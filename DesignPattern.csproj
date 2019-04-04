@@ -57,6 +57,11 @@
     <Compile Include="Factory\Factory_Method.cs" />
     <Compile Include="Factory\Inner_Factory.cs" />
     <Compile Include="Factory\Point_Example.cs" />
+    <Compile Include="Prototype\Copy_Constructors.cs" />
+    <Compile Include="Prototype\Copy_Through_Serialization.cs" />
+    <Compile Include="Prototype\Exercise.cs" />
+    <Compile Include="Prototype\Explicit_Deep_Copy_Interface.cs" />
+    <Compile Include="Prototype\ICloneable_is_bad.cs" />
     <Compile Include="SOLID\Dependency_Inversion_Principle.cs" />
     <Compile Include="SOLID\Interface_Segregation_Principle.cs" />
     <Compile Include="SOLID\Liskov_Substitution_Principle.cs" />
@@ -72,6 +77,7 @@
   <ItemGroup>
     <Content Include="Builder\Builder.txt" />
     <Content Include="Factory\Factory.txt" />
+    <Content Include="Prototype\Prototype.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
