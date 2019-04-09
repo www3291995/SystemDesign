@@ -65,6 +65,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\Adapter_Caching.cs" />
+    <Compile Include="Adapter\Exercise.cs" />
+    <Compile Include="Adapter\Vector_Raster.cs" />
     <Compile Include="Builder\Builder.cs" />
     <Compile Include="Builder\Exercise.cs" />
     <Compile Include="Builder\Faceted_Builder.cs" />
@@ -100,6 +103,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Adapter\Adapter.txt" />
     <Content Include="Builder\Builder.txt" />
     <Content Include="Factory\Factory.txt" />
     <Content Include="Prototype\Prototype.txt" />
