@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using DesignPattern.Factory;
 using DesignPattern.Prototype;
 using DesignPattern.Prototype.Copy_Through_Serialization;
+using DesignPattern.Singleton;
+using DesignPattern.Singleton.Testability_Issues;
 using static System.Console;
 using HotDrinkMachine = DesignPattern.Factory.Abstract_Factory_And_OCP.HotDrinkMachine;
 using Person = DesignPattern.Prototype.Copy_Through_Serialization.Person;
@@ -21,7 +23,6 @@ namespace DesignPattern
         static void Main(string[] args)
         {
 
-            
 
             // ------------------------------------
             ReadLine();

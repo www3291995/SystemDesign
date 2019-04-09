@@ -1,0 +1,26 @@
+﻿When discussing which patterns to drop, we found that we still love them all.
+(Not really - I'm in favor of dropping Singleton. Its use is almost always a design smell.)
+													--Erich Gamma
+
+Motivation
+
+--For some components it only makes sense to have one in the system
+	--Database repository
+	--Object factory
+--E.g., the constructor call is expensive
+	--We only do it once
+	--We provide everyone with the same instance
+--Want to prevent anyone creating additional copies
+--Need to take care of lazy instantiation and thread safety
+
+
+Singleton
+--A component which is instantiated only once
+
+
+Summary
+
+--Making a 'safe' singleton is easy: construct a static Lazy<T> and return its value
+--Singletons are difficult to test
+--Instead of directly using a singleton, consider depending on an abstraction (e.g., an interface)
+--Consider defining singleton lifetime in DI container
