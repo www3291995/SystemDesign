@@ -68,6 +68,8 @@
     <Compile Include="Adapter\Adapter_Caching.cs" />
     <Compile Include="Adapter\Exercise.cs" />
     <Compile Include="Adapter\Vector_Raster.cs" />
+    <Compile Include="Bridge\Bridge.cs" />
+    <Compile Include="Bridge\Exercise.cs" />
     <Compile Include="Builder\Builder.cs" />
     <Compile Include="Builder\Exercise.cs" />
     <Compile Include="Builder\Faceted_Builder.cs" />
@@ -104,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Adapter\Adapter.txt" />
+    <Content Include="Bridge\Bridge.txt" />
     <Content Include="Builder\Builder.txt" />
     <Content Include="Factory\Factory.txt" />
     <Content Include="Prototype\Prototype.txt" />
