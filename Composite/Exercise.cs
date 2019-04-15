@@ -65,12 +65,12 @@ namespace DesignPattern.Composite
         [Test]
         public void Test()
         {
-            var s = new SingleValue {Value = 10};
+            var s = new SingleValue { Value = 10 };
             var m = new ManyValues();
             m.Add(20);
             m.Add(30);
 
-            Assert.That(new List<IValueContainer>{s,m}.Sum(), Is.EqualTo(60));
+            Assert.That(new List<IValueContainer> { s, m }.Sum(), Is.EqualTo(60));
         }
     }
 }

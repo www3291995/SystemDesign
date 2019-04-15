@@ -78,6 +78,12 @@
     <Compile Include="Composite\Exercise.cs" />
     <Compile Include="Composite\Geometric_Shapes.cs" />
     <Compile Include="Composite\Neural_Networks.cs" />
+    <Compile Include="Decorator\Adapter_Decorator.cs" />
+    <Compile Include="Decorator\Custom_String_Builder.cs" />
+    <Compile Include="Decorator\Dynamic_Decorator_Composition.cs" />
+    <Compile Include="Decorator\Exercise.cs" />
+    <Compile Include="Decorator\Multiple_Inheritance.cs" />
+    <Compile Include="Decorator\Static_Decorator_Composition.cs" />
     <Compile Include="Factory\Abstract_Factory.cs" />
     <Compile Include="Factory\Abstract_Factory_And_OCP.cs" />
     <Compile Include="Factory\Exercise.cs" />
@@ -112,6 +118,7 @@
     <Content Include="Bridge\Bridge.txt" />
     <Content Include="Builder\Builder.txt" />
     <Content Include="Composite\Composite.txt" />
+    <Content Include="Decorator\Decorator.txt" />
     <Content Include="Factory\Factory.txt" />
     <Content Include="Prototype\Prototype.txt" />
     <EmbeddedResource Include="Singleton\captials.txt">
