@@ -11,6 +11,7 @@ using NUnit.Framework.Constraints;
 using static System.Console;
 
 using DesignPattern.Decorator.Static_Decorator_Composition;
+using DesignPattern.Facade;
 using ColorShape = DesignPattern.Decorator.Static_Decorator_Composition.ColorShape;
 using Square = DesignPattern.Decorator.Static_Decorator_Composition.Square;
 

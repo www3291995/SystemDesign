@@ -84,6 +84,8 @@
     <Compile Include="Decorator\Exercise.cs" />
     <Compile Include="Decorator\Multiple_Inheritance.cs" />
     <Compile Include="Decorator\Static_Decorator_Composition.cs" />
+    <Compile Include="Facade\Exercise.cs" />
+    <Compile Include="Facade\Facade.cs" />
     <Compile Include="Factory\Abstract_Factory.cs" />
     <Compile Include="Factory\Abstract_Factory_And_OCP.cs" />
     <Compile Include="Factory\Exercise.cs" />
@@ -119,6 +121,7 @@
     <Content Include="Builder\Builder.txt" />
     <Content Include="Composite\Composite.txt" />
     <Content Include="Decorator\Decorator.txt" />
+    <Content Include="Facade\Facade.txt" />
     <Content Include="Factory\Factory.txt" />
     <Content Include="Prototype\Prototype.txt" />
     <EmbeddedResource Include="Singleton\captials.txt">
