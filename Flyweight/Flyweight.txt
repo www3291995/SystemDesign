@@ -1,0 +1,20 @@
+﻿Motivation
+
+--Avoid redundancy when storing data
+--E.g., MMORPG
+	--Plenty of users with identical first/last names
+	--No sense in storing same first/last name over and over again
+	--Store a list of names and pointers to them
+--.NET performs string interning, so an identical string is stored only once
+--E.g., bold or italic text in the console
+	--Don't want each character to have a formatting character
+	--Operate on rangs (e.g., line number, start/end positions)
+
+Flyweight
+--A space optimization technique that lets us use less memory by storing externally the data associated with similar objects.
+
+Summary
+
+--Store common data externally
+--Define the idea of 'ranges' on homogeneous collections and store data related to those ranges
+--.Net string interning is the Flyweight pattern

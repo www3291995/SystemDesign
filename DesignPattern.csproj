@@ -40,6 +40,9 @@
     <Reference Include="Autofac, Version=4.9.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>packages\Autofac.4.9.2\lib\net45\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="dotMemory.Unit, Version=111.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>packages\JetBrains.dotMemoryUnit.3.0.20171219.105559\lib\net35\dotMemory.Unit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -93,6 +96,9 @@
     <Compile Include="Factory\Factory_Method.cs" />
     <Compile Include="Factory\Inner_Factory.cs" />
     <Compile Include="Factory\Point_Example.cs" />
+    <Compile Include="Flyweight\Exercise.cs" />
+    <Compile Include="Flyweight\Repeating_User_Names.cs" />
+    <Compile Include="Flyweight\Text_Formatting.cs" />
     <Compile Include="Prototype\Copy_Constructors.cs" />
     <Compile Include="Prototype\Copy_Through_Serialization.cs" />
     <Compile Include="Prototype\Exercise.cs" />
@@ -123,6 +129,7 @@
     <Content Include="Decorator\Decorator.txt" />
     <Content Include="Facade\Facade.txt" />
     <Content Include="Factory\Factory.txt" />
+    <Content Include="Flyweight\Flyweight.txt" />
     <Content Include="Prototype\Prototype.txt" />
     <EmbeddedResource Include="Singleton\captials.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
