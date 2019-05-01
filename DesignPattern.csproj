@@ -43,6 +43,9 @@
     <Reference Include="dotMemory.Unit, Version=111.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>packages\JetBrains.dotMemoryUnit.3.0.20171219.105559\lib\net35\dotMemory.Unit.dll</HintPath>
     </Reference>
+    <Reference Include="ImpromptuInterface, Version=6.2.2.0, Culture=neutral, PublicKeyToken=0b1781c923b2975b, processorArchitecture=MSIL">
+      <HintPath>packages\ImpromptuInterface.6.2.2\lib\net40\ImpromptuInterface.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -104,6 +107,12 @@
     <Compile Include="Prototype\Exercise.cs" />
     <Compile Include="Prototype\Explicit_Deep_Copy_Interface.cs" />
     <Compile Include="Prototype\ICloneable_is_bad.cs" />
+    <Compile Include="Proxy\Composite_Proxy.cs" />
+    <Compile Include="Proxy\Dynamic_Proxy_For_Logging.cs" />
+    <Compile Include="Proxy\Exercise.cs" />
+    <Compile Include="Proxy\Property_Proxy.cs" />
+    <Compile Include="Proxy\Protection_Proxy.cs" />
+    <Compile Include="Proxy\Value_Proxy.cs" />
     <Compile Include="Singleton\Exercise.cs" />
     <Compile Include="Singleton\Monostate.cs" />
     <Compile Include="Singleton\Singleton_Implementation.cs" />
@@ -134,6 +143,7 @@
     <EmbeddedResource Include="Singleton\captials.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Content Include="Proxy\Proxy.txt" />
     <Content Include="Singleton\Singleton.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
