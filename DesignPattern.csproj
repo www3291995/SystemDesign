@@ -81,6 +81,9 @@
     <Compile Include="Builder\Faceted_Builder.cs" />
     <Compile Include="Builder\Fluent_builder_inheritance_with_recursive_generics.cs" />
     <Compile Include="Builder\Without_builder.cs" />
+    <Compile Include="Chain_of_Responsibility\Broker_Chain.cs" />
+    <Compile Include="Chain_of_Responsibility\Exercise.cs" />
+    <Compile Include="Chain_of_Responsibility\Method_Chain.cs" />
     <Compile Include="Composite\Exercise.cs" />
     <Compile Include="Composite\Geometric_Shapes.cs" />
     <Compile Include="Composite\Neural_Networks.cs" />
@@ -134,6 +137,7 @@
     <Content Include="Adapter\Adapter.txt" />
     <Content Include="Bridge\Bridge.txt" />
     <Content Include="Builder\Builder.txt" />
+    <Content Include="Chain_of_Responsibility\Chain_of_Responsibility.txt" />
     <Content Include="Composite\Composite.txt" />
     <Content Include="Decorator\Decorator.txt" />
     <Content Include="Facade\Facade.txt" />
