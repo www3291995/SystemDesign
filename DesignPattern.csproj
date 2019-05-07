@@ -84,6 +84,9 @@
     <Compile Include="Chain_of_Responsibility\Broker_Chain.cs" />
     <Compile Include="Chain_of_Responsibility\Exercise.cs" />
     <Compile Include="Chain_of_Responsibility\Method_Chain.cs" />
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\Exercise.cs" />
+    <Compile Include="Command\Undo_Operation.cs" />
     <Compile Include="Composite\Exercise.cs" />
     <Compile Include="Composite\Geometric_Shapes.cs" />
     <Compile Include="Composite\Neural_Networks.cs" />
@@ -138,6 +141,7 @@
     <Content Include="Bridge\Bridge.txt" />
     <Content Include="Builder\Builder.txt" />
     <Content Include="Chain_of_Responsibility\Chain_of_Responsibility.txt" />
+    <Content Include="Command\Command.txt" />
     <Content Include="Composite\Composite.txt" />
     <Content Include="Decorator\Decorator.txt" />
     <Content Include="Facade\Facade.txt" />

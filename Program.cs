@@ -10,7 +10,7 @@ using MoreLinq;
 using NUnit.Framework.Constraints;
 using static System.Console;
 
-using DesignPattern.Chain_of_Responsibility.Broker_Chain;
+using DesignPattern.Command.Undo_Operation;
 
 namespace DesignPattern
 {
@@ -18,20 +18,6 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            var game = new Game();
-            var goblin = new Creature(game, "Strong Goblin", 3, 3);
-            WriteLine(goblin);
-
-            using (new DoubleAttackModifier(game, goblin))
-            {
-                WriteLine(goblin);
-                using (new IncreaseDefenseModifier(game, goblin))
-                {
-                    WriteLine(goblin);
-                }
-            }
-
-            WriteLine(goblin);
 
 
 
