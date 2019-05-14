@@ -66,7 +66,7 @@ namespace DesignPattern.Flyweight
             }
 
             ForceGC();
-
+            
             dotMemory.Check(memory => { Console.WriteLine(memory.SizeInBytes); });
         }
 
