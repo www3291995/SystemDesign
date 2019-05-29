@@ -111,6 +111,11 @@
     <Compile Include="Interpreter\Exercise.cs" />
     <Compile Include="Interpreter\Handmade_Interpreter_Lexing.cs" />
     <Compile Include="Interpreter\Handmade_Interpreter_Parsing.cs" />
+    <Compile Include="Iterator\Array-Backed_Properties.cs" />
+    <Compile Include="Iterator\Exercise.cs" />
+    <Compile Include="Iterator\Iterator_And_Duck_Typing.cs" />
+    <Compile Include="Iterator\Iterator_Method.cs" />
+    <Compile Include="Iterator\Iterator_Object.cs" />
     <Compile Include="Prototype\Copy_Constructors.cs" />
     <Compile Include="Prototype\Copy_Through_Serialization.cs" />
     <Compile Include="Prototype\Exercise.cs" />
@@ -151,6 +156,7 @@
     <Content Include="Factory\Factory.txt" />
     <Content Include="Flyweight\Flyweight.txt" />
     <Content Include="Interpreter\Interpreter.txt" />
+    <Content Include="Iterator\Iterator.txt" />
     <Content Include="Prototype\Prototype.txt" />
     <EmbeddedResource Include="Singleton\captials.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -158,9 +164,7 @@
     <Content Include="Proxy\Proxy.txt" />
     <Content Include="Singleton\Singleton.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Iterator\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

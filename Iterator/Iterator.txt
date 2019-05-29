@@ -1,0 +1,21 @@
+﻿Motivation
+
+--Iteration (traversal) is a core functionality of various data structures
+--An iterator is a class that facilitates the traversal
+	--Keeps a reference to the current element
+	--Knows how to move to a different element
+--Iterator is an implicit construct
+	--.Net builds a state machine around your yield return statements
+
+
+Iterator
+--An object (or, in .NET, a method) that facilitates the traversal of a data structure.
+
+
+Summary
+
+--An iterator specified how you can traverse an object
+--An iterator object, unlike a method, cannot be recursive
+--Generally, an IEnumerable<T>-returning method is enough
+--Iteration works through duck typing - you need a GetEnumerator() that yields a type that has
+  Current and MoveNext()
