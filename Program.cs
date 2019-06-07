@@ -12,6 +12,7 @@ using static System.Console;
 
 
 using DesignPattern.Iterator.Iterator_And_Duck_Typing;
+using DesignPattern.Mediator;
 
 
 namespace DesignPattern
@@ -20,8 +21,6 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-
-            
 
 
             // ------------------------------------
