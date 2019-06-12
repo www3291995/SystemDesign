@@ -128,6 +128,10 @@
     <Compile Include="Mediator\Chat_Room.cs" />
     <Compile Include="Mediator\Event_Broker.cs" />
     <Compile Include="Mediator\Exercise.cs" />
+    <Compile Include="Memento\Exercise.cs" />
+    <Compile Include="Memento\Memento.cs" />
+    <Compile Include="Memento\Memento_For_Interop.cs" />
+    <Compile Include="Memento\Undo_And_Redo.cs" />
     <Compile Include="Prototype\Copy_Constructors.cs" />
     <Compile Include="Prototype\Copy_Through_Serialization.cs" />
     <Compile Include="Prototype\Exercise.cs" />
@@ -170,6 +174,7 @@
     <Content Include="Interpreter\Interpreter.txt" />
     <Content Include="Iterator\Iterator.txt" />
     <Content Include="Mediator\Mediator.txt" />
+    <Content Include="Memento\Memento.txt" />
     <Content Include="Prototype\Prototype.txt" />
     <EmbeddedResource Include="Singleton\captials.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
