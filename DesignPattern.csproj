@@ -43,8 +43,14 @@
     <Reference Include="dotMemory.Unit, Version=111.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>packages\JetBrains.dotMemoryUnit.3.0.20171219.105559\lib\net35\dotMemory.Unit.dll</HintPath>
     </Reference>
-    <Reference Include="ImpromptuInterface, Version=6.2.2.0, Culture=neutral, PublicKeyToken=0b1781c923b2975b, processorArchitecture=MSIL">
-      <HintPath>packages\ImpromptuInterface.6.2.2\lib\net40\ImpromptuInterface.dll</HintPath>
+    <Reference Include="Dynamitey, Version=2.0.9.136, Culture=neutral, PublicKeyToken=cbf53ea3aeb972c6, processorArchitecture=MSIL">
+      <HintPath>packages\Dynamitey.2.0.9.136\lib\net40\Dynamitey.dll</HintPath>
+    </Reference>
+    <Reference Include="ImpromptuInterface, Version=7.0.1.0, Culture=neutral, PublicKeyToken=0b1781c923b2975b, processorArchitecture=MSIL">
+      <HintPath>packages\ImpromptuInterface.7.0.1\lib\net40\ImpromptuInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations, Version=10.2.1.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>packages\JetBrains.Annotations.10.2.1\lib\net\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -132,6 +138,9 @@
     <Compile Include="Memento\Memento.cs" />
     <Compile Include="Memento\Memento_For_Interop.cs" />
     <Compile Include="Memento\Undo_And_Redo.cs" />
+    <Compile Include="Null_Object\Dynamic_Null_Object.cs" />
+    <Compile Include="Null_Object\Exercise.cs" />
+    <Compile Include="Null_Object\Null_Object.cs" />
     <Compile Include="Prototype\Copy_Constructors.cs" />
     <Compile Include="Prototype\Copy_Through_Serialization.cs" />
     <Compile Include="Prototype\Exercise.cs" />
@@ -175,6 +184,7 @@
     <Content Include="Iterator\Iterator.txt" />
     <Content Include="Mediator\Mediator.txt" />
     <Content Include="Memento\Memento.txt" />
+    <Content Include="Null_Object\Null_Object.txt" />
     <Content Include="Prototype\Prototype.txt" />
     <EmbeddedResource Include="Singleton\captials.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

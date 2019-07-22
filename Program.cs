@@ -11,7 +11,7 @@ using NUnit.Framework.Constraints;
 using static System.Console;
 
 
-using DesignPattern.Memento.Undo_And_Redo;
+using DesignPattern.Null_Object.Dynamic_Null_Object;
 
 namespace DesignPattern
 {
@@ -19,6 +19,9 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
+
+
+
 
 
 
