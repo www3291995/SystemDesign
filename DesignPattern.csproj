@@ -84,6 +84,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter\Adapter_Caching.cs" />
@@ -141,6 +142,10 @@
     <Compile Include="Null_Object\Dynamic_Null_Object.cs" />
     <Compile Include="Null_Object\Exercise.cs" />
     <Compile Include="Null_Object\Null_Object.cs" />
+    <Compile Include="Observer\Exercise.cs" />
+    <Compile Include="Observer\Observable_Properties_and_Sequences.cs" />
+    <Compile Include="Observer\Observer_via_event.cs" />
+    <Compile Include="Observer\Weak_Event_Pattern.cs" />
     <Compile Include="Prototype\Copy_Constructors.cs" />
     <Compile Include="Prototype\Copy_Through_Serialization.cs" />
     <Compile Include="Prototype\Exercise.cs" />
@@ -185,6 +190,7 @@
     <Content Include="Mediator\Mediator.txt" />
     <Content Include="Memento\Memento.txt" />
     <Content Include="Null_Object\Null_Object.txt" />
+    <Content Include="Observer\Observer.txt" />
     <Content Include="Prototype\Prototype.txt" />
     <EmbeddedResource Include="Singleton\captials.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
